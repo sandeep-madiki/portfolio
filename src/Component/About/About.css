@@ -1,0 +1,196 @@
+.about {
+  padding: 6rem 2rem;
+  background: #0a192f;
+  color: #e6f1ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at top right,
+    rgba(100, 255, 218, 0.1),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e6f1ff;
+}
+
+.heading-strike {
+  width: 100px;
+  height: 4px;
+  margin: 0 auto;
+  background: #64ffda;
+  border-radius: 2px;
+}
+
+.about-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-content {
+  background: #112240;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+}
+
+.about-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-para p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #8892b0;
+  margin: 0;
+}
+
+.about-achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #112240;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.about-achievement {
+  text-align: center;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.about-achievement:hover {
+  transform: translateY(-5px);
+}
+
+.about-achievement h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.about-achievement p {
+  font-size: 1rem;
+  color: #8892b0;
+  margin: 0;
+}
+
+.achievement-divider {
+  width: 1px;
+  height: 50px;
+  background-color: #64ffda;
+  opacity: 0.3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+  }
+
+  .about-para p {
+    font-size: 1rem;
+  }
+
+  .about-achievements {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about-title h1 {
+    font-size: 2rem;
+  }
+
+  .about-section {
+    padding: 0;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+  }
+
+  .about-achievements {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .achievement-divider {
+    width: 80%;
+    height: 1px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about-title h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-content {
+    padding: 1.25rem;
+  }
+
+  .about-para p {
+    font-size: 0.95rem;
+  }
+
+  .about-achievement h2 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  background-color: #161513;
+  color: white;
+  font-family: "outfit";
+}
+
+@layer components {
+  .nav-link {
+    @apply relative flex flex-col items-center gap-0.5 cursor-pointer;
+  }
+
+  .nav-button {
+    @apply px-6 py-3.5 rounded-full bg-gradient-to-r from-secondary to-accent text-lg cursor-pointer transition-all duration-500 hover:scale-105;
+  }
+}
