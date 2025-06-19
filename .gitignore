@@ -27,5 +27,3 @@ dist-ssr
 .env
 .env.*
 
-# Ignore only the private image
-src/assets/profile-1 (1).jpg
