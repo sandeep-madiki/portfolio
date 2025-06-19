@@ -6,6 +6,7 @@ const Contact = () => {
   const githubUrl = import.meta.env.VITE_GITHUB_URL;
   const mailId = import.meta.env.VITE_MAIL_ID;
   const linkedIn = import.meta.env.VITE_LINKEDIN;
+  const mailAccessKey = import.meta.env.VITE_MAIL_ACCESS_KEY;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -92,7 +93,7 @@ const Contact = () => {
     try {
       const apiData = new FormData();
 
-      apiData.append("access_key", "95d8965c-df88-431a-992e-7848e0f59dc9");
+      apiData.append("access_key", mailAccessKey);
       apiData.append("email", formData.email);
       apiData.append("message", formData.message);
       apiData.append("name", formData.name);
