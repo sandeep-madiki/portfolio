@@ -47,6 +47,30 @@ const projects = [
     ],
     note: "Internal project; link not publicly accessible.",
   },
+  {
+    title: "Comprehensive HRMS Platform",
+    description:
+      "Built an end-to-end HRMS solution covering employee lifecycle management, leave and expense workflows, and organizational hierarchy with role-based access controls.",
+    features: [
+      "Designed and implemented dynamic employee information management with advanced forms and validations.",
+      "Developed leave management with full calendar view, including HR approval/rejection workflows.",
+      "Built expense and advance claim modules with multi-level approvals and status tracking.",
+      "Implemented user and role management allowing the addition/removal of employees and defining organizational hierarchy.",
+      "Delivered distinct role-based views for HR, Finance, and IT to ensure task-specific accessibility and smooth cross-department operations.",
+    ],
+    impact:
+      "Enhanced HR operational efficiency by 35%, reduced expense processing time by 40%, and improved user management accuracy by 30%.",
+    technologies: [
+      "ReactJS",
+      "Bootstrap",
+      "React Router",
+      "Forms & Validation",
+      "Context API",
+      "FullCalendar",
+      "REST APIs",
+    ],
+    note: "Internal project; link not publicly accessible.",
+  },
 ];
 
 const PROJECTS_PER_PAGE = 2;

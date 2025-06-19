@@ -6,7 +6,7 @@ const Contact = () => {
   const githubUrl = import.meta.env.VITE_GITHUB_URL;
   const mailId = import.meta.env.VITE_MAIL_ID;
   const linkedIn = import.meta.env.VITE_LINKEDIN;
-  const mailAccessKey = import.meta.env.VITE_MAIL_ACCESS_KEY;
+  // const mailAccessKey = import.meta.env.VITE_MAIL_ACCESS_KEY;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -91,34 +91,33 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const apiData = new FormData();
-
-      apiData.append("access_key", mailAccessKey);
-      apiData.append("email", formData.email);
-      apiData.append("message", formData.message);
-      apiData.append("name", formData.name);
-      apiData.append("subject", formData.subject);
-
-      const object = Object.fromEntries(apiData);
-      const json = JSON.stringify(object);
-
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://formspree.io/f/meokzyol", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: json,
-      }).then((res) => res.json());
-      setSubmitSuccess(true);
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
       });
-      if (res.success) {
-        console.log("Success", res);
+
+      const data = await res.json();
+
+      if (res.ok) {
+        console.log("Success", data);
+        setSubmitSuccess(true);
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        console.error("Form submission error:", data);
       }
     } catch (error) {
       console.error("Error submitting form:", error);

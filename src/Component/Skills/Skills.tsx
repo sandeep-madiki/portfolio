@@ -22,48 +22,32 @@ import NetlifyIcon from "../../assets/Tech-icons/Netlify.webp";
 import DockerIcon from "../../assets/Tech-icons/Docker.png";
 import FigmaIcon from "../../assets/Tech-icons/Figma.png";
 import JSONIcon from "../../assets/Tech-icons/JSON.png";
-import ProblemSolvingIcon from "../../assets/Tech-icons/problem-solving.png";
-import TeamCollaborationIcon from "../../assets/Tech-icons/partners.png";
-import CommunicationIcon from "../../assets/Tech-icons/conversation.png";
-import AdaptabilityIcon from "../../assets/Tech-icons/adaptation.png";
 
-const skills = {
-  "Frontend Development": [
-    { name: "React JS", icon: ReactIcon },
-    { name: "Next JS", icon: Nexticon },
-    { name: "Redux Toolkit", icon: ReduxIcon },
-    { name: "HTML", icon: HTMLIcon },
-    { name: "CSS", icon: CSSIcon },
-    { name: "Tailwind CSS", icon: TaiwindIcon },
-    { name: "Bootstrap", icon: BootstrapIcon },
-    { name: "SCSS", icon: SCSSIcon },
-    { name: "JavaScript", icon: JSIcon },
-    { name: "TypeScript", icon: TSIcon },
-  ],
-  "Backend Development": [
-    { name: "Node JS", icon: NodeIcon },
-    { name: "Express JS", icon: ExpressIcon },
-    { name: "MongoDB", icon: MongoDBIcon },
-    { name: "Mongoose", icon: MongooseIcon },
-    { name: "SQL", icon: SqlIcon },
-  ],
-  "Tools & Platforms": [
-    { name: "Git", icon: GitIcon },
-    { name: "VSCode", icon: VSCodeIcon },
-    { name: "Postman", icon: PostmanIcon },
-    { name: "Vercel", icon: VercelIcon },
-    { name: "Netlify", icon: NetlifyIcon },
-    { name: "Docker (Basics)", icon: DockerIcon },
-    { name: "Figma", icon: FigmaIcon },
-    { name: "JSON", icon: JSONIcon },
-  ],
-  "Soft Skills": [
-    { name: "Problem Solving", icon: ProblemSolvingIcon },
-    { name: "Team Collaboration", icon: TeamCollaborationIcon },
-    { name: "Communication", icon: CommunicationIcon },
-    { name: "Adaptability", icon: AdaptabilityIcon },
-  ],
-};
+const skills1 = [
+  { name: "React JS", icon: ReactIcon },
+  { name: "Next JS", icon: Nexticon },
+  { name: "Redux Toolkit", icon: ReduxIcon },
+  { name: "HTML", icon: HTMLIcon },
+  { name: "CSS", icon: CSSIcon },
+  { name: "Tailwind CSS", icon: TaiwindIcon },
+  { name: "Bootstrap", icon: BootstrapIcon },
+  { name: "SCSS", icon: SCSSIcon },
+  { name: "JavaScript", icon: JSIcon },
+  { name: "TypeScript", icon: TSIcon },
+  { name: "Node JS", icon: NodeIcon },
+  { name: "Express JS", icon: ExpressIcon },
+  { name: "MongoDB", icon: MongoDBIcon },
+  { name: "Mongoose", icon: MongooseIcon },
+  { name: "SQL", icon: SqlIcon },
+  { name: "Git", icon: GitIcon },
+  { name: "VSCode", icon: VSCodeIcon },
+  { name: "Postman", icon: PostmanIcon },
+  { name: "Vercel", icon: VercelIcon },
+  { name: "Netlify", icon: NetlifyIcon },
+  { name: "Docker (Basics)", icon: DockerIcon },
+  { name: "Figma", icon: FigmaIcon },
+  { name: "JSON", icon: JSONIcon },
+];
 
 const Skills = () => {
   return (
@@ -74,19 +58,12 @@ const Skills = () => {
       </div>
 
       <div className="skills-container">
-        {Object.entries(skills).map(([category, categorySkills]) => (
-          <div key={category} className="skills-category">
-            <h2>{category}</h2>
-            <div className="skills-grid">
-              {categorySkills.map((skill) => (
-                <div key={skill.name} className="skill-card">
-                  <div className="skill-icon">
-                    <img src={skill.icon} alt={skill.name} />
-                  </div>
-                  <h3>{skill.name}</h3>
-                </div>
-              ))}
+        {skills1.map((skill) => (
+          <div key={skill.name} className="skill-card">
+            <div className="skill-icon">
+              <img src={skill.icon} alt={skill.name} />
             </div>
+            <h3>{skill.name}</h3>
           </div>
         ))}
       </div>
