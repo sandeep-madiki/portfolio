@@ -146,21 +146,21 @@ const Contact = () => {
               <Mail className="contact-icon" size={20} />
               <div className="contact-text">
                 <h3>Email</h3>
-                <span>sandeep.madiki@kloudworx.com</span>
+                <span>sandeep.madiki.dev@gmail.com</span>
               </div>
             </div>
             <div className="contact-item">
               <Phone className="contact-icon" size={20} />
               <div className="contact-text">
                 <h3>Phone</h3>
-                <span>+91 1234567890</span>
+                <span>+91 7671987175</span>
               </div>
             </div>
             <div className="contact-item">
               <MapPin className="contact-icon" size={20} />
               <div className="contact-text">
                 <h3>Location</h3>
-                <span>Chennai, India</span>
+                <span>AP, India</span>
               </div>
             </div>
           </div>
