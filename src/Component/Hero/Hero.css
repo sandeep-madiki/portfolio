@@ -189,3 +189,27 @@
     max-width: 280px;
   }
 }
+
+.typewriter-cursor {
+  display: inline-block;
+  color: #e6f1ff !important;
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+.role-text,
+.role-text * {
+  color: #e6f1ff !important;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
