@@ -87,7 +87,7 @@
   align-items: center;
   gap: 3rem;
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 0.5rem;
   background: #112240;
   border-radius: 12px;
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
@@ -164,7 +164,7 @@
   .about-achievements {
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .achievement-divider {
