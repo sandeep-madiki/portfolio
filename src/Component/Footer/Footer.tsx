@@ -155,8 +155,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          {/* <p>&copy; {currentYear} Sandeep Madiki. All rights reserved.</p> */}
-          <p>&copy; {currentYear} Sandeep Madiki.</p>
+          <p>&copy; {currentYear} Sandeep Madiki. All rights reserved.</p>
           <p className="footer-location">Based in AP, India</p>
         </div>
       </div>
