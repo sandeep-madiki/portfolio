@@ -2,7 +2,7 @@ import "./Footer.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Footer = () => {
-  // const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
   const githubUrl = import.meta.env.VITE_GITHUB_URL;
   const mailId = import.meta.env.VITE_MAIL_ID;
@@ -154,10 +154,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* <div className="footer-bottom">
+        <div className="footer-bottom">
           <p>&copy; {currentYear} Sandeep Madiki. All rights reserved.</p>
           <p className="footer-location">Based in AP, India</p>
-        </div> */}
+        </div>
       </div>
     </footer>
   );
