@@ -27,25 +27,24 @@ const skills1 = [
   { name: "React JS", icon: ReactIcon },
   { name: "Next JS", icon: Nexticon },
   { name: "Redux Toolkit", icon: ReduxIcon },
+  { name: "JavaScript", icon: JSIcon },
+  { name: "TypeScript", icon: TSIcon },
+
   { name: "HTML", icon: HTMLIcon },
   { name: "CSS", icon: CSSIcon },
   { name: "Tailwind CSS", icon: TaiwindIcon },
   { name: "Bootstrap", icon: BootstrapIcon },
-  // { name: "SCSS", icon: SCSSIcon },
-  { name: "JavaScript", icon: JSIcon },
-  { name: "TypeScript", icon: TSIcon },
+
   { name: "Node JS", icon: NodeIcon },
   { name: "Express JS", icon: ExpressIcon },
   { name: "MongoDB", icon: MongoDBIcon },
-  // { name: "Mongoose", icon: MongooseIcon },
   { name: "SQL", icon: SqlIcon },
+
   { name: "Git", icon: GitIcon },
-  { name: "VSCode", icon: VSCodeIcon },
   { name: "Postman", icon: PostmanIcon },
+  { name: "VSCode", icon: VSCodeIcon },
   { name: "Vercel", icon: VercelIcon },
-  // { name: "Netlify", icon: NetlifyIcon },
-  // { name: "Docker (Basics)", icon: DockerIcon },
-  // { name: "Figma", icon: FigmaIcon },
+
   { name: "JSON", icon: JSONIcon },
 ];
 

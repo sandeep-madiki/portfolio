@@ -1,7 +1,10 @@
 import "./Hero.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Resume from "../../assets/Sandeep_Madiki_Resume.pdf";
-import ProfileImg from "../../assets/profile-1 (1).jpg";
+import Resume from "../../assets/Sandeep-Madiki.pdf";
+// import Resume from "../../assets/Sandeep_Madiki_Resume.pdf";
+// import ProfileImg from "../../assets/profile-1 (1).jpg";
+// import ProfileImg from "../../assets/prof-profile-full.png";
+import ProfileImg from "../../assets/prof-profile-crop.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
@@ -93,10 +96,10 @@ const Hero = () => {
               },
             }}
           >
-            A passionate developer with 2+ years of experience in frontend
-            development, now expanding into full-stack. Specialized in building
-            responsive, scalable web applications using React, TypeScript, and
-            modern web technologies.
+            Frontend Developer with 2.6+ years of experience, crafting
+            responsive and scalable web applications. Specialized in React,
+            TypeScript, and modern web technologies, with a strong focus on
+            delivering clean, user-friendly interfaces.
           </motion.p>
           <motion.div
             className="hero-action"
@@ -179,7 +182,13 @@ const Hero = () => {
 // Custom hook for typewriter effect
 function useTypewriterText() {
   const [text] = useTypewriter({
-    words: ["Full Stack Developer", "Frontend Developer"],
+    // words: ["Full Stack Developer", "Frontend Developer"],
+    words: [
+      "React JS Developer",
+      "Frontend Developer",
+      "TypeScript Specialist",
+      "Full Stack Learner",
+    ],
     loop: 0,
     typeSpeed: 70,
     deleteSpeed: 50,
