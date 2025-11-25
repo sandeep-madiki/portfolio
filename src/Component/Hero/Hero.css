@@ -229,3 +229,14 @@
     opacity: 0;
   }
 }
+
+.highlight-text {
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 2px;
+  background: linear-gradient(135deg, #da0032, #ff6f61, #ffbb59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}

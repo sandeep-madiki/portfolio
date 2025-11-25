@@ -117,10 +117,17 @@ const Hero = () => {
                 },
               }}
             >
-              Frontend Developer with 2.6+ years of experience, crafting
-              responsive and scalable web applications. Specialized in React,
-              TypeScript, and modern web technologies, with a strong focus on
-              delivering clean, user-friendly interfaces.
+              Frontend Developer with{" "}
+              <span className="highlight-text">3 years of experience</span>{" "}
+              building{" "}
+              <span className="highlight-text">
+                responsive, high-performance
+              </span>{" "}
+              applications using{" "}
+              <span className="highlight-text">React & TypeScript.</span>{" "}
+              Passionate about crafting{" "}
+              <span className="highlight-text">user-friendly interfaces</span>{" "}
+              and solving real-world problems through clean, scalable code.
             </motion.p>
             <motion.div
               className="hero-action"
